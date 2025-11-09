@@ -4,3 +4,5 @@ python-dotenv
 PyPDF2 
 python-pptx 
 requests
+google-genai
+reportlab
