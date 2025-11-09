@@ -11,9 +11,7 @@ from reportlab.lib.enums import TA_CENTER
 
 # 1️⃣ Load environment variables
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
-
-# 2️⃣ Initialize Gemini client
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 # 3️⃣ Streamlit page setup

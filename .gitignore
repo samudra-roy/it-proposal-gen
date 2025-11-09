@@ -1,7 +1,16 @@
-".venv/" 
-".env" 
+# Ignore virtual environments
 .venv/
+venv/
+env/
+
+# Ignore environment variables
 .env
+
+# Ignore Python cache files
 __pycache__/
 *.pyc
-*.pdf
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
